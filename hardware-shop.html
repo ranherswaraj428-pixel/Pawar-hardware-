@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>पवार हार्डवेअर</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+:root {
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  color-scheme: light dark;
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --text: #1d1d1b;
+  --muted: #5b5b56;
+  --accent: #d9480f;
+  --accent-text: #ffffff;
+  --border: #e3e0d8;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #161614;
+    --surface: #22221f;
+    --text: #f2f0ea;
+    --muted: #b3b1a8;
+    --accent: #ff8a4c;
+    --accent-text: #161614;
+    --border: #3a3935;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #161614;
+  --surface: #22221f;
+  --text: #f2f0ea;
+  --muted: #b3b1a8;
+  --accent: #ff8a4c;
+  --accent-text: #161614;
+  --border: #3a3935;
+}
+*, *::before, *::after { box-sizing: inherit; }
+body {
+  margin: 0;
+  font-family: "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+.hero {
+  background: var(--accent);
+  color: var(--accent-text);
+  text-align: center;
+  padding: 56px 20px;
+}
+.hero h1 { margin: 0 0 12px; font-size: clamp(1.8rem, 6vw, 2.6rem); }
+.hero p { margin: 0 auto 24px; max-width: 560px; }
+.btn {
+  display: inline-block;
+  margin: 6px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  background: var(--accent-text);
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn-alt {
+  background: transparent;
+  color: var(--accent-text);
+  border: 2px solid var(--accent-text);
+}
+main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
+h2 { font-size: 1.6rem; margin: 0 0 20px; }
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.card, .contact {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+.card h3 { margin: 0 0 6px; color: var(--accent); }
+.card p { margin: 0; color: var(--muted); }
+.contact { margin-top: 40px; }
+.contact p { margin: 8px 0; overflow-wrap: anywhere; }
+.contact a { color: var(--accent); }
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 24px 20px;
+  border-top: 1px solid var(--border);
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <h1>पवार हार्डवेअर</h1>
+  <p>टूल्स, इलेक्ट्रिकल, प्लंबिंग आणि बांधकाम साहित्य, सर्व एकाच ठिकाणी.</p>
+  <a class="btn" href="tel:+918010816026">आत्ता कॉल करा</a>
+  <a class="btn btn-alt" href="https://wa.me/918010816026">WhatsApp वर संपर्क करा</a>
+</header>
+
+<main>
+  <section>
+    <h2>आमच्याकडे काय मिळेल</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>हाताची साधने</h3>
+        <p>हातोडा, ड्रिल, पाना, स्क्रूड्रायव्हर आणि बरेच काही.</p>
+      </div>
+      <div class="card">
+        <h3>इलेक्ट्रिकल</h3>
+        <p>वायर, स्विच, MCB, दिवे आणि फिटिंग्ज.</p>
+      </div>
+      <div class="card">
+        <h3>प्लंबिंग</h3>
+        <p>पाईप, नळ, फिटिंग्ज आणि बाथरूमचे साहित्य.</p>
+      </div>
+      <div class="card">
+        <h3>रंग</h3>
+        <p>आतील व बाहेरील रंग, ब्रश आणि रोलर.</p>
+      </div>
+      <div class="card">
+        <h3>बांधकाम साहित्य</h3>
+        <p>सिमेंट, सळई, वाळू आणि बांधकामाचे साहित्य.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>संपर्क साधा</h2>
+    <p><strong>फोन:</strong> <a href="tel:+918010816026">8010816026</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/918010816026">8010816026</a></p>
+    <p><strong>ईमेल:</strong> <a href="mailto:ranherswaraj428@gmail.com">ranherswaraj428@gmail.com</a></p>
+    <p><strong>पत्ता:</strong> नांदेड सिटी, वाहलेकरवस्ती, पुणे 411068</p>
+    <p><strong>वेळ:</strong> सकाळी 8 ते रात्री 10</p>
+  </section>
+</main>
+
+<footer>&copy; 2026 पवार हार्डवेअर. सर्व हक्क राखीव.</footer>
+</body>
+</html>
